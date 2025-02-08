@@ -1,71 +1,91 @@
-# ====== 代码来自 Lab1.ipynb ======
-
+# Lab1
+1.
 print("Hello world")
 
+2.
 a=int(input())
 b=int(input())
 print(a+b)
 
-
+3.
 if 5>2:
     print("5 is greater than 2")
 if 5 >2 :
          print("5 is greater than 2")
     
-
+4.
 x =5
 y="Hello world"
 print(x)
 print(y)
 
-
+5.
 #this is comment
 x="Hello world"
 print(x)
 
+6. 
+Correct file extension for python files
+.py
 
+
+7.
+correct command line syntax for cheking if python is installed on your computer(also to check the python version)
+python --version
+
+
+8.
+correct syntax to exit the python command line interface
 exit()
 
+
+9.
 import sys
 print(sys.version)
 
-'''
-This is a comment
-written in
-more than just one line'''
+10.
 print("Hello world!")
-
-
 '''This is a comment
 written in 
 more than just one line'''
 
+
+11.
+'This is a comment\nwritten in \nmore than just one line'
+
+12.
 x=5
 y="Jack"
 print(x)
 print(y)
 
+13.
 x=4
 x="Miko"
 print(x)
 
+14.
 x=str(3) #x will be '3
 y=int(3) # y will be 3
 z=float(3) #z will be 3.0
 
+15.
 x=5
 y="Hii"
 print(type(x))
 print(type(y))
 
+16.
 x="Peter"
 #is the same as
 x='Peter'
 
+17.
 a=4
 A="Bili"
 #A will not overwrite a
 
+18.
 #Legal variable names:
 myvar="Jon"
 my_var="Jon"
@@ -89,18 +109,21 @@ MyVariableName="jon"
 Each word is seprated by an underscore character:'''
 my_variable_name="Jon"
 
+19.
 #Python allows you to assign values to multiple variables in one line
 x,y,z="Banana","Apple","Lemon"
 print(x)
 print(y)
 print(z)
 
+20.
 #you can assign the same value to mupltiple variables in one line:
 x=y=z="Beibei"
 print(x)
 print(y)
 print(z)
 
+21.
 #Unpack a list
 fruits=["Cherry","Grape","Orange"]
 x,y,z=fruits
@@ -108,44 +131,47 @@ print(x)
 print(y)
 print(z)
 
-
+22.
 #correct syntax to add the valur "Hello" to 3 variables in one statement
 x=y=z="Hello"
 
 x="Python is awsome"
 print(x)
 
+23.
 #In the print() function,you output the multiple variables,seprated by a comma:
 x="Python"
 y="is"
 z="awsome"
 print(x,y,z)
 
-
+24.
 #you can alse use the + operator to output multiple variables:
 x="Python "
 y="is "
 z="awsome"
 print(x + y + z)
 
-
+25.
 #For numbers,the + character work as a mathematical operator:
 x=10
 y=9
 print(x+y)
 
+26.
 #In the print() function,when you try to combine a string and a number with + operator,python will gve you an error:
 x=5
 y="li"
 print(x+y)
 
-
+27.
 #Create a function outsideof a funtion,anduse it inside the funtion
 x="awsome"
 def myfunc():
     print("Python is " +x)
 myfunc()
 
+28.
 #Create a variable inside a function,with same name as the global variable
 x="awsome"
 def myfunc():
@@ -154,6 +180,7 @@ def myfunc():
 myfunc()
 print("Python is " +x)
 
+29.
 #if you use the global keyword,the variable belongs to the global scope
 def myfunc():
     global x
@@ -161,6 +188,7 @@ def myfunc():
 myfunc()
 print("Python is "+x)
 
+30.
 #to change the value of global variable inside a function, refer to the variable by using the global keyword:
 x="awsome"
 def myfunc():
@@ -169,53 +197,68 @@ def myfunc():
 myfunc()
 print("Python is "+x)
 
+31.
 #Print the data type of given variable:
 x=5
 print(type(x))
 
+32.
 x="Hello"
 print(type(x))
 
+33.
 x=20.6
 print(type(x))
 
+34.
 x=1j
 print(type(x))
 
+35.
 x=["apple","banana","cherry"]
 print(type(x))
 
-
+36.
 x=("apple","banana","lemon")
 print(type(x))
 
+37.
 x=range(6)
 print(type(x))
 
+38.
 x={"name":"Miko","age":19}
 print(type(x))
 
+39.
 x={"aplle","banana","cherry"}
 print(type(x))
 
+40.
 x=frozenset({"apple","banana","cherry"})
 print(type(x))
 
+41.
 x=True
 print(type(x))
 
+42.
 x=b"Hello"
 print(type(x))
 
+43.
 x=bytearray(5)
 print(type(x))
 
+44.
 x=memoryview(bytes(5))
 print(type(x))
 
+45.
 x=None
 print(type(x))
 
+46.
 x=1 #int
 y=2.3 #float
 z=1j # complex
@@ -224,7 +267,7 @@ print(type(x))
 print(type(y))
 print(type(z))
 
-
+47.
 #Integers:
 x=1122234
 y=1
@@ -233,6 +276,7 @@ print(type(x))
 print(type(y))
 print(type(z))
 
+48.
 #Floats
 x=1.3
 y=3.67
@@ -241,6 +285,7 @@ print(type(x))
 print(type(y))
 print(type(z))
 
+49.
 #Complex
 x=3+5j
 y=5j
@@ -249,6 +294,7 @@ print(type(x))
 print(type(y))
 print(type(z))
 
+50.
 #Convert from one type to another
 x=1 #int
 y=2.8 #float
@@ -266,41 +312,46 @@ print(type(a))
 print(type(b))
 print(type(c))
 
+51.
 #import the random module,and display a random nujmber between 1 and 9:
 import random
 print(random.randrange(1,10))
 
+52.
 #Integers
 x=int(1) #x will be 1
 y=int(2.8) # y will be 2
 z=int("3") # z will be 3
 
-
+53.
 #Floats
 x=float(1) # x will be 1.0
 y=float(2.8) # y will be 2.8
 z=float("4.5") #z will be 4.5
 
-
+54.
 #Strings 
 x=str("s2") # x will be s2
 y=str(2) #y will be 2
 z=str(2.9) #z will be 2.9
 
+55.
 #You can display a string literal with the print() function:
 print("Hello")
 print('Hello')
 
-
+56.
 #You can use the quotes inside a string,as long as they don't mathch the quote surrounding the string:
 print("It's alright")
 print("He is called 'Johnny'")
 print('He is called "Johnny"')
 
+57.
 #Assigning a string to a variable is done with the variable name followed by an equal sign and the string  
 a ="Hello"
 print(a)
 
+58.
 #You can use the three double quotes
 a = """Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,
@@ -308,6 +359,7 @@ sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua."""
 print(a)
 
+59.
 #Or three single quotes
 a = '''Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,
@@ -315,31 +367,37 @@ sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua.'''
 print(a)
 
+60.
 #Get the character at position 1(remember that the first character has the position 0):
 a="Hello,world"
 print(a[1])
 
+61.
 #Loop through the letters in the word "banana"
 for x in "banana":
     print(x)
 
+62.
 #the len() function returns the length of a string
 a="Hello,world"
 print(len(a))
 
+63.
 #Check if "Free" is present in the following text
 txt="The best things in life are free!"
 print("free" in txt)
-
+64.
 #Print if only "free" is present:
 txt ="The best things in life are free"
 if "free" in txt:
     print("Yes,'free'is present")
 
+65.
 #check if "expensive"is not present in the following text:
 txt="The best things in life are free"
 print("expensive" not in txt)
 
+66.
 #Print only if "expensive" is not present:
 txt= "Best thins in life are free"
 if "expensive" not in txt:
